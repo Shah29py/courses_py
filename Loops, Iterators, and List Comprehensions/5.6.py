@@ -8,8 +8,6 @@ for i in range(N):
             print(1, end=' ')
 
 # 3
-import sys
-
 # считывание списка из входного потока
 lst_in = list(map(str.strip, sys.stdin.readlines()))
 
