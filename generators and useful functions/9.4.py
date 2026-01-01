@@ -24,3 +24,7 @@ answer = filter(lambda x: x % 2 == 0, a & b)
 print(*sorted(answer))
 
 # 5
+symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_1234567890.@"
+data = input().split()
+true_email = filter(lambda mail: all(x in symbols for x in mail) and mail.index('.') > mail.index('@') , data)
+print(*true_email)
