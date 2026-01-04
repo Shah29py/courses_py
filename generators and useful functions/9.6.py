@@ -28,3 +28,17 @@ res = map(sum, zip(a, b))
 print(*res)
 
 # 5
+import sys
+
+# считывание списка из входного потока
+lst_in = list(map(str.strip, sys.stdin.readlines()))
+
+# здесь продолжайте программу (используйте список строк lst_in)
+def sort_dict(d):
+    d = sorted(d.items())
+    return list(dict(d).values())[:3]
+
+
+
+d = {int(i.split(':')[1]): i.split(':')[0]  for i in lst_in}
+print(*sort_dict(d))
